@@ -1,0 +1,22 @@
+class luas:
+    def _init_(self, p, q):
+        self.p = p
+        self.q = q
+    def hitung_luas(self):
+        return self.p * self.q
+    
+class volume(luas):
+    def _init_(self, p, q, r):
+        self.p = p
+        self.q = q
+        self.r = r
+    def hitung_volume(self):
+        return self.p * self.q * self.r
+    
+operasi =luas(15, 6)
+hasil = operasi.hitung_luas()
+print("Hasil luas: ", hasil)
+
+operasi =volume(15, 6, 2)
+hasil = operasi.hitung_volume()
+print("Hasil volume: ", hasil)
