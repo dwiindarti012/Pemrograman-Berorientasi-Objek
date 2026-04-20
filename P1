@@ -1,0 +1,13 @@
+#pertemuan 1
+class Hewan:
+    def _init_(self, nama, jenis):
+        self.nama = nama
+        self.jenis = jenis
+
+    def tampilkanNamaJenis(self):
+        print("Nama hewan:", self.nama)
+        print("Jenis hewan:", self.jenis)
+
+
+kucing = Hewan("Mimi", "Oren")
+kucing.tampilkanNamaJenis()
