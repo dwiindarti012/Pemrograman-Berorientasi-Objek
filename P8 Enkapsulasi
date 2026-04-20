@@ -1,0 +1,25 @@
+class Mahasiswa:
+    def _init_(self, nama, nim):
+        self.__nama = nama
+        self.__nim = nim
+
+    def getNama(self):
+        return self.__nama
+    
+    def getNim(self):
+        return self.__nim
+    
+    def setNama(self, nama):
+        self.__nama = nama
+    
+    def setNim(self, nim):
+        self.__nim = nim
+
+mhs1 = Mahasiswa("Dwi", "5678")
+print("Nama mahasiswa: ", mhs1.getNama())
+print("Nim mahasiswa: ", mhs1.getNim())
+
+mhs1.setNama("citra")
+mhs1.setNim(78911)
+print("Nama mahasiswa setelah diubah: ", mhs1.getNama())
+print("Nim mahasiswa setelah diubah: ", mhs1.getNim())
