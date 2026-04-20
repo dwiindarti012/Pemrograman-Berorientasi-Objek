@@ -11,3 +11,26 @@ class Hewan:
 
 kucing = Hewan("Mimi", "Oren")
 kucing.tampilkanNamaJenis()
+
+# lagi
+class mahasiswa:
+    def _init_(self, nama, nim, tanggal_lahir, alamat):
+        self.nama = nama
+        self.nim = nim
+        self.tanggal_lahir = tanggal_lahir
+        self.alamat = alamat
+
+    def tampilkanNama(self):
+        print("Nama Mahasiswa: ", self.nama)
+    def tampilkanNim(self):
+        print("Nim Mahasiswa: ", self.nim)
+    def tampilkanTanggallahir(self):
+        print("Tanggal lahir: ", self.tanggal_lahir)
+    def tampilkanAlamat(self):
+        print("Alamat: ", self.alamat)
+
+dwi = mahasiswa("Dwi Indarti wardani", "250306010", "12-10-2006", "Flores")
+dwi.tampilkanNama()
+dwi.tampilkanNim()
+dwi.tampilkanTanggallahir()
+dwi.tampilkanAlamat()
