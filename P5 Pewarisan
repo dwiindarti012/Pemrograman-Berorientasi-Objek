@@ -1,0 +1,26 @@
+# Class induk
+class Mahasiswa:
+    def _init_(self, nama, nim):
+        self.nama = nama
+        self.nim = nim
+
+    def tampilkan_info(self):
+        print(f"Nama: {self.nama}")
+        print(f"NIM: {self.nim}")
+
+# Class anak 1
+class ProdiTI(Mahasiswa):
+    def tampilkan_prodi(self):
+        print ("Program Studi: Teknologi Informasi")
+
+# Class anak 2
+class Laptop(ProdiTI):
+    def tampilkan_laptop(self):
+        print ("Laptop: ASUS ROG")
+    
+
+mhs = Laptop("Budi", "123456")
+
+mhs.tampilkan_info()
+mhs.tampilkan_prodi()
+mhs.tampilkan_laptop()
