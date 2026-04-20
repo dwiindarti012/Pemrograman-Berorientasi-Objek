@@ -1,0 +1,37 @@
+class mahasiswa:
+    def __init__(self, nama, nim, tanggal_lahir, alamat):
+        self.nama = nama
+        self.nim = nim
+        self.tanggal_lahir = tanggal_lahir
+        self.alamat= alamat
+
+    def tampilkanNama(self):
+        print("nama mahasiswa: ", self.nama)
+    def tampilkanNim(self):
+        print("nim mahasiswa: ", self.nim)
+    def tampilkanTanggal_lahir(self):
+        print("tanggal_lahir mahasiswa: ", self.tanggal_lahir)
+    def tampilkanAlamat(self):
+        print("alamat mahasiswa: ", self.alamat)
+
+
+
+mhs1 = mahasiswa("Dwi", "010", "22-06-06", "Flores")
+mhs2 = mahasiswa("Alda", "011", "24-07-09", "Depok")
+mhs3 = mahasiswa("Haura", "012", "06-02-05", "Jakarta")
+mhs4 = mahasiswa("Soraya", "015", "02-11-09", "Bandung")
+mhs5 = mahasiswa("Nayaka", "020", "08-12-02", "Dompu")
+
+mahasiswa_ti = []
+
+mahasiswa_ti.append(mhs1)
+mahasiswa_ti.append(mhs2)
+mahasiswa_ti.append(mhs3)
+mahasiswa_ti.append(mhs4)
+mahasiswa_ti.append(mhs5)
+
+for mhs in mahasiswa_ti:
+    mhs.tampilkanNama()
+    mhs.tampilkanNim()
+    mhs.tampilkanTanggal_lahir()
+    mhs.tampilkanAlamat()
