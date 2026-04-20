@@ -1,38 +1,35 @@
+
 class mahasiswa:
-    def __init__(self, nama, tanggal_lahir, nim, alamat):
+    def _init_(self, nama, tanggal_lahir, nim, alamat):
         self.nama = nama
         self.tanggal_lahir = tanggal_lahir
         self.nim = nim
         self.alamat = alamat
 
     def tampilkanNama(self):
-        print("Nama mahasiswa:", self.nama)
-
-    def tampilkanTanggalLahir(self):
-        print("Tanggal lahir mahasiswa:", self.tanggal_lahir)
-
+        print("Nama Mahasiswa   :", self.nama)
+    def tampilkanTanggallahir(self):
+        print("Tanggal lahir    :", self.tanggal_lahir)
     def tampilkanNim(self):
-        print("NIM mahasiswa:", self.nim)
-
+        print("Nim Mahasiswa    :", self.nim)
     def tampilkanAlamat(self):
-        print("Alamat mahasiswa:", self.alamat)
+        print("Alamat           :", self.alamat)
+
+mahasiswa_ti = []
 
 
 jumlah_mhs_ti = int(input("Masukkan jumlah mahasiswa: "))
-mahasiswa_ti = []
-
 for i in range(jumlah_mhs_ti):
-    nama = input(f"Masukkan nama mahasiswaf ke-{i+1}: ")
-    tanggal_lahir = input(f"Masukkan tanggal lahir mahasiswa ke-{i+1}: ")
-    nim = input(f"Masukkan NIM mahasiswake-{i+1}: ")
-    alamat = input(f"Masukkan alamat mahasiswa ke-{i+1}: ")
-
+    nama = input(f"Masukkan Nama ke-{i+1}: ")
+    tanggal_lahir = input(f"Masukkan tanggal lahir ke-{i+1}: ")
+    nim = input(f"Masukkan Nim ke-{i+1}: ")
+    alamat = input(f"masukkan Alamat ke-{i+1}: ")
     mhs_ti = mahasiswa(nama, tanggal_lahir, nim, alamat)
     mahasiswa_ti.append(mhs_ti)
 
 
 for mhs in mahasiswa_ti:
     mhs.tampilkanNama()
-    mhs.tampilkanTanggalLahir()
+    mhs.tampilkanTanggallahir()
     mhs.tampilkanNim()
     mhs.tampilkanAlamat()
